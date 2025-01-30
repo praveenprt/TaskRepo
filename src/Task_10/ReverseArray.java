@@ -1,4 +1,4 @@
-package Task10;
+package Task_10;
 
 import java.lang.reflect.Array;
 

@@ -1,4 +1,4 @@
-package Task10;
+package Task_10;
 
 public class ReverseString {
 
