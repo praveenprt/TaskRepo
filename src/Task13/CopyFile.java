@@ -10,8 +10,8 @@ import java.io.FileWriter;
 public class CopyFile {
 	public static void main(String[] args) {
 		
-		String originalFile ="/TaskRepo/src/Task13/download.jpg";
-		String copyFile ="C:\\Users\\nites\\eclipse-workspace\\TaskRepo\\src\\Task13\\download2.jpg";
+		String originalFile ="C:\\Users\\nites\\eclipse-workspace\\TaskRepo\\src\\Task13\\download.jpg";
+		String copyFile ="copyfile.jpg";
 		
 		try {
 				
@@ -21,11 +21,10 @@ public class CopyFile {
 			
 
 
-            byte[] buffer = new byte[1024];  // Buffer to hold the file data
+            byte[] buffer = new byte[1024];  
             int bytesRead;
 
-            // Read from the source file and write to the destination file
-            while ((bytesRead = fis.read(buffer)) != -1) {
+             while ((bytesRead = fis.read(buffer)) != -1) {
                 fos.write(buffer, 0, bytesRead);
             }
 			System.out.println("File Copied");
