@@ -20,6 +20,7 @@ public class WordsInText {
 			}
 			
 			System.out.println("total number of words in "+ filename +" - "+ count);
+			
 		} catch (Exception e) {
 			System.out.println("Error reading file"+ filename);
 		}
