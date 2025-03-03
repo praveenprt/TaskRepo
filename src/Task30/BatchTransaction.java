@@ -20,6 +20,7 @@ public class BatchTransaction {
 					stmt.setInt(1, tx.getAccountID());
 					stmt.setString(2, tx.getType());
 					stmt.setDouble(3,tx.getAmount());
+					stmt.addBatch();
 				}
 				stmt.executeBatch();
 				conn.commit();
